@@ -1,0 +1,457 @@
+{
+  "@@locale": "en",
+  "appTitle": "Valizim",
+  "@appTitle": {
+    "description": "Brand name. Not translated."
+  },
+  "actionSave": "Save",
+  "actionCancel": "Cancel",
+  "actionDelete": "Delete",
+  "actionDone": "Done",
+  "actionNext": "Next",
+  "actionBack": "Back",
+  "actionClose": "Close",
+  "actionAdd": "Add",
+  "actionEdit": "Edit",
+  "actionShare": "Share",
+  "actionUndo": "Undo",
+  "actionContinue": "Continue",
+  "actionNotNow": "Not now",
+  "actionOpenSettings": "Open Settings",
+  "actionRemove": "Remove",
+  "actionTryAgain": "Try again",
+  "tripTypeBeach": "Beach",
+  "tripTypeBeachHint": "Sun, sand and swimming",
+  "tripTypeCity": "City break",
+  "tripTypeCityHint": "Walking, cafés and museums",
+  "tripTypeBusiness": "Business",
+  "tripTypeBusinessHint": "Meetings and smart clothes",
+  "tripTypeCamping": "Camping",
+  "tripTypeCampingHint": "Outdoors and self-sufficient",
+  "tripTypeWinter": "Winter",
+  "tripTypeWinterHint": "Cold weather and layers",
+  "tripTypeGeneral": "General",
+  "tripTypeGeneralHint": "The essentials, nothing extra",
+  "categoryDocuments": "Documents",
+  "categoryClothing": "Clothing",
+  "categoryToiletries": "Toiletries",
+  "categoryHealth": "Health",
+  "categoryElectronics": "Electronics",
+  "categoryGear": "Gear",
+  "categoryMisc": "Other",
+  "homeTitle": "My trips",
+  "homeCreateTrip": "Plan a trip",
+  "homeEmptyTitle": "No trips yet",
+  "homeEmptyBody": "Create a trip and Valizim builds the packing list for you. No account, no internet needed.",
+  "homeEmptyAction": "Plan your first trip",
+  "homeSectionUpcoming": "Upcoming",
+  "homeSectionPast": "Past",
+  "homeSectionUndated": "No date yet",
+  "homeStartsToday": "Starts today",
+  "homeStartsTomorrow": "Starts tomorrow",
+  "homeStartsInDays": "In {days} days",
+  "@homeStartsInDays": {
+    "description": "Countdown to a trip that starts in more than one day.",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "homeStartedDaysAgo": "{days} days ago",
+  "@homeStartedDaysAgo": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "homeFreeTripsUsed": "{used} of {limit} free trips used",
+  "@homeFreeTripsUsed": {
+    "placeholders": {
+      "used": {
+        "type": "int"
+      },
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "homeMenuDuplicate": "Duplicate",
+  "homeMenuArchive": "Move to past",
+  "homeMenuUnarchive": "Move to upcoming",
+  "homeMenuDelete": "Delete trip",
+  "homeDeleteTitle": "Delete this trip?",
+  "homeDeleteBody": "{name} and all of its items will be removed from this device.",
+  "@homeDeleteBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "homeTripDeleted": "Trip deleted",
+  "homeTripArchived": "Moved to past",
+  "homeTripRestored": "Moved to upcoming",
+  "homeCopySuffix": "{name} (copy)",
+  "@homeCopySuffix": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "homeTripDuplicated": "Trip duplicated",
+  "daysCount": "{days, plural, =1{1 day} other{{days} days}}",
+  "@daysCount": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "travelersCount": "{count, plural, =1{1 traveller} other{{count} travellers}}",
+  "@travelersCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "itemsCount": "{count, plural, =1{1 item} other{{count} items}}",
+  "@itemsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "packedOfTotal": "{packed} of {total} packed",
+  "@packedOfTotal": {
+    "placeholders": {
+      "packed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "remainingCount": "{count, plural, =1{1 item left} other{{count} items left}}",
+  "@remainingCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "wizardTitle": "New trip",
+  "wizardEditTitle": "Edit trip",
+  "wizardStepTypeTitle": "What kind of trip?",
+  "wizardStepTypeBody": "This decides what goes on your list.",
+  "wizardStepDetailsTitle": "Trip details",
+  "wizardStepExtrasTitle": "Anything else?",
+  "wizardStepExtrasBody": "Optional. Each one adds a few items.",
+  "wizardNameLabel": "Trip name",
+  "wizardNameHint": "Barcelona weekend",
+  "wizardNameRequired": "Give your trip a name",
+  "wizardNameTooLong": "Keep it under {max} characters",
+  "@wizardNameTooLong": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "wizardDurationLabel": "How many days?",
+  "wizardDurationValue": "{days, plural, =1{1 day} other{{days} days}}",
+  "@wizardDurationValue": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "wizardTravelersLabel": "Travellers",
+  "wizardStartDateLabel": "Start date",
+  "wizardStartDateHelp": "Optional. Needed for departure reminders.",
+  "wizardStartDateNone": "Not set",
+  "wizardStartDateClear": "Clear date",
+  "wizardOptionSwimming": "Swimming",
+  "wizardOptionSwimmingHint": "Swimwear and a quick-dry towel",
+  "wizardOptionFormal": "Formal event",
+  "wizardOptionFormalHint": "A formal outfit and dress shoes",
+  "wizardOptionWork": "Laptop / work",
+  "wizardOptionWorkHint": "Laptop, charger and adapter",
+  "wizardOptionLaundry": "Laundry access",
+  "wizardOptionLaundryHint": "Packs fewer clothes for long trips",
+  "wizardSubmit": "Create packing list",
+  "wizardSubmitEdit": "Save changes",
+  "wizardPreview": "About {count} items",
+  "@wizardPreview": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "listProgressTitle": "packed",
+  "listAllPacked": "All packed. Have a great trip.",
+  "listNothingPacked": "Nothing packed yet.",
+  "listAddItem": "Add item",
+  "listAddItemTitle": "Add an item",
+  "listEditItemTitle": "Edit item",
+  "listItemLabel": "Item",
+  "listItemHint": "Sunglasses",
+  "listItemRequired": "Type an item name",
+  "listQuantity": "Quantity",
+  "listSection": "Section",
+  "listEssentialToggle": "Mark as essential",
+  "listEssentialBadge": "Essential",
+  "listItemRemoved": "Item removed",
+  "listItemLimit": "This trip already has the maximum of {max} items.",
+  "@listItemLimit": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "listHideChecked": "Hide packed",
+  "listShowChecked": "Show packed",
+  "listUncheckAll": "Uncheck everything",
+  "listUncheckAllDone": "All items unchecked",
+  "listMenuEdit": "Edit trip",
+  "listMenuTemplate": "Save as template",
+  "listMenuRegenerate": "Rebuild list",
+  "listRegenerateTitle": "Rebuild this list?",
+  "listRegenerateBody": "Every item goes back to the generated list and your ticks are cleared. Items you added yourself are removed.",
+  "listRegenerateAction": "Rebuild",
+  "listRegenerated": "List rebuilt",
+  "listEmptyTitle": "This list is empty",
+  "listEmptyBody": "Add your first item, or rebuild the list from the trip template.",
+  "listSwipeDelete": "Delete",
+  "listNotFound": "This trip is no longer available.",
+  "remindersTitle": "Departure reminders",
+  "remindersNeedsDateTitle": "Set a start date first",
+  "remindersNeedsDateBody": "Reminders are scheduled from your departure time, so the trip needs a start date.",
+  "remindersAddDate": "Add a start date",
+  "remindersDayBefore": "1 day before",
+  "remindersHoursBefore": "{hours} hours before",
+  "@remindersHoursBefore": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "remindersDepartureTime": "Departure time",
+  "remindersScheduledAt": "Reminder at {time}",
+  "@remindersScheduledAt": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "remindersInThePast": "This time has already passed",
+  "remindersBlockedTitle": "Notifications are turned off",
+  "remindersBlockedBody": "Valizim cannot show reminders until you allow notifications in iOS Settings.",
+  "remindersSaved": "Reminders updated",
+  "notificationTitle": "Time to pack for {name}",
+  "@notificationTitle": {
+    "description": "Local notification title.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "notificationBodyRemaining": "{count, plural, =1{1 item is still unpacked.} other{{count} items are still unpacked.}}",
+  "@notificationBodyRemaining": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notificationBodyReady": "Your list is complete. Safe travels.",
+  "shareTitle": "Share list",
+  "shareAsText": "Share as text",
+  "shareAsTextHint": "Works in any app",
+  "shareAsImage": "Share as card",
+  "shareAsImageHint": "A picture of your progress",
+  "shareFailed": "Sharing is not available right now.",
+  "shareCardTagline": "Packed with Valizim",
+  "shareTextHeader": "{name} - packing list",
+  "@shareTextHeader": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "shareTextMeta": "{days} - {travelers}",
+  "@shareTextMeta": {
+    "description": "Line combining the already-formatted day and traveller counts.",
+    "placeholders": {
+      "days": {
+        "type": "String"
+      },
+      "travelers": {
+        "type": "String"
+      }
+    }
+  },
+  "shareTextFooter": "Made with Valizim",
+  "templatesTitle": "Templates",
+  "templatesBuiltIn": "Built-in",
+  "templatesCustom": "My templates",
+  "templatesCustomEmptyTitle": "No saved templates",
+  "templatesCustomEmptyBody": "Open any packing list and choose Save as template to reuse it later.",
+  "templatesUse": "Use this template",
+  "templatesDeleteTitle": "Delete this template?",
+  "templatesDeleteBody": "{name} will be removed. Trips already created from it are not affected.",
+  "@templatesDeleteBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "templatesDeleted": "Template deleted",
+  "templateSaveTitle": "Save as template",
+  "templateNameLabel": "Template name",
+  "templateSaved": "Template saved",
+  "templatesBuiltInCount": "{count} built-in templates",
+  "@templatesBuiltInCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "proTitle": "Valizim Pro",
+  "proSubtitle": "One payment. Yours forever.",
+  "proFreeHeading": "Always free",
+  "proFreeTrips": "{limit} saved trips",
+  "@proFreeTrips": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "proFreeTemplates": "All six built-in trip templates",
+  "proFreeOffline": "Works completely offline",
+  "proFreeShareText": "Share your list as text",
+  "proUnlockHeading": "Pro unlocks",
+  "proUnlockUnlimited": "Unlimited saved trips",
+  "proUnlockTemplates": "Save your own templates",
+  "proUnlockDuplicate": "Duplicate and reuse any trip",
+  "proUnlockShareCard": "Premium share cards",
+  "proBuy": "Unlock Pro",
+  "proBuyPriced": "Unlock Pro - {price}",
+  "@proBuyPriced": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "proRestore": "Restore purchase",
+  "proOwnedTitle": "You have Pro",
+  "proOwnedBody": "Thank you for supporting Valizim.",
+  "proPending": "Your purchase is waiting for approval.",
+  "proCancelled": "Purchase cancelled.",
+  "proFailed": "The purchase could not be completed.",
+  "proRestored": "Purchase restored. Pro is unlocked.",
+  "proNothingToRestore": "No previous purchase was found for this Apple Account.",
+  "proUnavailable": "The App Store is not available right now.",
+  "proPriceLoading": "Loading price",
+  "proPriceUnavailable": "Price unavailable",
+  "proLegalNote": "Payment is charged to your Apple Account. This is a one-time purchase, not a subscription.",
+  "proLimitTitle": "You have used all {limit} free trips",
+  "@proLimitTitle": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "proLimitBody": "Unlock Pro for unlimited trips, or delete a trip to free a slot.",
+  "proBadge": "Pro",
+  "proLockedDuplicate": "Duplicating trips is a Pro feature.",
+  "proLockedTemplates": "Custom templates are a Pro feature.",
+  "proLockedShareCard": "Share cards are a Pro feature.",
+  "proSeeWhatsIncluded": "See what's included",
+  "settingsTitle": "Settings",
+  "settingsSectionDefaults": "New trip defaults",
+  "settingsDefaultTravelers": "Default travellers",
+  "settingsDefaultDuration": "Default trip length",
+  "settingsSectionNotifications": "Notifications",
+  "settingsNotificationStatus": "System permission",
+  "settingsNotificationAllowed": "Allowed",
+  "settingsNotificationBlocked": "Blocked",
+  "settingsNotificationNotAsked": "Not requested yet",
+  "settingsNotificationBlockedHelp": "Reminders cannot be delivered until notifications are allowed in iOS Settings.",
+  "settingsSectionData": "Data",
+  "settingsResetTemplates": "Reset new-trip defaults",
+  "settingsResetTemplatesBody": "Puts the traveller count and trip length back to their original values. Your trips and saved templates are not touched.",
+  "settingsResetTemplatesDone": "Defaults reset",
+  "settingsDeleteAll": "Delete all app data",
+  "settingsDeleteAllStep1Title": "Delete everything?",
+  "settingsDeleteAllStep1Body": "Every trip, item and saved template is permanently removed from this device.",
+  "settingsDeleteAllStep2Title": "This cannot be undone",
+  "settingsDeleteAllStep2Body": "There is no backup and no cloud copy. Delete {count} anyway?",
+  "@settingsDeleteAllStep2Body": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsDeleteAllConfirm": "Delete everything",
+  "settingsDeleteAllDone": "All app data deleted",
+  "settingsSectionAbout": "About",
+  "settingsVersion": "Version {version} ({build})",
+  "@settingsVersion": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      },
+      "build": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsPrivacy": "Privacy",
+  "settingsTerms": "Terms of use",
+  "settingsContact": "Contact support",
+  "settingsRulesVersion": "Packing rules v{version}",
+  "@settingsRulesVersion": {
+    "placeholders": {
+      "version": {
+        "type": "int"
+      }
+    }
+  },
+  "privacyTitle": "Privacy",
+  "privacyHeadline": "Your trips stay on this device.",
+  "privacyOnDeviceTitle": "Stored only on your phone",
+  "privacyOnDeviceBody": "Trips, items and templates live in a database inside the app. Nothing is uploaded anywhere.",
+  "privacyNoAccountTitle": "No account, no tracking",
+  "privacyNoAccountBody": "Valizim has no sign-in, no analytics and no advertising. It never asks who you are.",
+  "privacyNotificationsTitle": "Reminders are local",
+  "privacyNotificationsBody": "Departure reminders are scheduled by iOS on this device. No server sends them.",
+  "privacyPurchaseTitle": "Purchases go through Apple",
+  "privacyPurchaseBody": "If you unlock Pro, Apple handles the payment and tells the app whether you own it. Valizim never sees your payment details.",
+  "privacySharingTitle": "Sharing is up to you",
+  "privacySharingBody": "A list leaves the device only when you tap share, and only the trip name, items and progress are included.",
+  "privacyOpenPolicy": "Read the full privacy policy",
+  "privacyLinkFailed": "Could not open the link.",
+  "errorGeneric": "Something went wrong.",
+  "errorSaveFailed": "Could not save your changes.",
+  "stepperDecrease": "Decrease",
+  "stepperIncrease": "Increase"
+}

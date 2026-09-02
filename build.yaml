@@ -1,0 +1,10 @@
+targets:
+  $default:
+    builders:
+      # Options for the part-file (`.g.dart`) generator. Text date-times keep
+      # timestamps human-readable in the database file and make the UTC storage
+      # rule visible when inspecting a device dump.
+      drift_dev:
+        options:
+          store_date_time_values_as_text: true
+          named_parameters: true

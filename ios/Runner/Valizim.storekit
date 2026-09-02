@@ -1,0 +1,36 @@
+{
+  "identifier" : "A1F2C3D4-0000-4000-8000-VALIZIMSTORE",
+  "nonRenewingSubscriptions" : [],
+  "products" : [
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "PRO-LIFETIME-0001",
+      "localizations" : [
+        {
+          "description" : "Unlimited saved trips, your own templates, trip duplication and premium share cards. One payment, yours forever.",
+          "displayName" : "Valizim Pro",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "Sinirsiz kayitli seyahat, kendi sablonlarin, seyahat kopyalama ve ozel paylasim kartlari. Tek odeme, sonsuza kadar senin.",
+          "displayName" : "Valizim Pro",
+          "locale" : "tr_TR"
+        }
+      ],
+      "productID" : "com.valizim.app.pro_lifetime",
+      "referenceName" : "Pro Lifetime",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "VALIZIM",
+    "_developerTeamID" : "",
+    "_lastSynchronizedDate" : 0
+  },
+  "subscriptionGroups" : [],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

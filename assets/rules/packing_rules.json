@@ -1,0 +1,1186 @@
+{
+  "rulesVersion": 1,
+  "_comment": "Deterministic packing rules. Merge order: base -> tripTypes[type] -> options in fixed order. A later item with the same key fully replaces the earlier one.",
+  "base": [
+    {
+      "key": "passport_id",
+      "category": "documents",
+      "labels": {
+        "en": "Passport / ID",
+        "tr": "Pasaport / kimlik"
+      },
+      "sort": 10,
+      "essential": true
+    },
+    {
+      "key": "wallet",
+      "category": "documents",
+      "labels": {
+        "en": "Wallet & cards",
+        "tr": "Cüzdan ve kartlar"
+      },
+      "sort": 20,
+      "essential": true
+    },
+    {
+      "key": "tickets",
+      "category": "documents",
+      "labels": {
+        "en": "Tickets & bookings",
+        "tr": "Bilet ve rezervasyonlar"
+      },
+      "sort": 30,
+      "essential": true
+    },
+    {
+      "key": "travel_insurance",
+      "category": "documents",
+      "labels": {
+        "en": "Travel insurance details",
+        "tr": "Seyahat sigortası bilgileri"
+      },
+      "sort": 40
+    },
+    {
+      "key": "underwear",
+      "category": "clothing",
+      "labels": {
+        "en": "Underwear",
+        "tr": "İç çamaşırı"
+      },
+      "sort": 10,
+      "qty": {
+        "base": 0,
+        "perDay": 1,
+        "min": 2,
+        "max": 10,
+        "perTraveler": true,
+        "laundryCapDays": 4
+      }
+    },
+    {
+      "key": "socks",
+      "category": "clothing",
+      "labels": {
+        "en": "Socks",
+        "tr": "Çorap"
+      },
+      "sort": 20,
+      "qty": {
+        "base": 0,
+        "perDay": 1,
+        "min": 2,
+        "max": 10,
+        "perTraveler": true,
+        "laundryCapDays": 4
+      }
+    },
+    {
+      "key": "tshirt",
+      "category": "clothing",
+      "labels": {
+        "en": "T-shirts",
+        "tr": "Tişört"
+      },
+      "sort": 30,
+      "qty": {
+        "base": 0,
+        "perDay": 0.7,
+        "min": 2,
+        "max": 8,
+        "perTraveler": true,
+        "laundryCapDays": 4
+      }
+    },
+    {
+      "key": "trousers",
+      "category": "clothing",
+      "labels": {
+        "en": "Trousers",
+        "tr": "Pantolon"
+      },
+      "sort": 40,
+      "qty": {
+        "base": 1,
+        "perDay": 0.2,
+        "min": 1,
+        "max": 4,
+        "perTraveler": true,
+        "laundryCapDays": 3
+      }
+    },
+    {
+      "key": "sweater",
+      "category": "clothing",
+      "labels": {
+        "en": "Sweater",
+        "tr": "Kazak"
+      },
+      "sort": 48,
+      "qty": {
+        "base": 1,
+        "perDay": 0.1,
+        "min": 1,
+        "max": 3,
+        "perTraveler": true,
+        "laundryCapDays": 3
+      }
+    },
+    {
+      "key": "sleepwear",
+      "category": "clothing",
+      "labels": {
+        "en": "Sleepwear",
+        "tr": "Pijama"
+      },
+      "sort": 50,
+      "qty": {
+        "base": 1,
+        "perDay": 0.1,
+        "min": 1,
+        "max": 3,
+        "perTraveler": true,
+        "laundryCapDays": 2
+      }
+    },
+    {
+      "key": "light_jacket",
+      "category": "clothing",
+      "labels": {
+        "en": "Light jacket",
+        "tr": "İnce ceket"
+      },
+      "sort": 60,
+      "qty": {
+        "base": 1,
+        "perTraveler": true
+      }
+    },
+    {
+      "key": "everyday_shoes",
+      "category": "clothing",
+      "labels": {
+        "en": "Everyday shoes",
+        "tr": "Günlük ayakkabı"
+      },
+      "sort": 70,
+      "qty": {
+        "base": 1,
+        "perTraveler": true
+      }
+    },
+    {
+      "key": "toothbrush",
+      "category": "toiletries",
+      "labels": {
+        "en": "Toothbrush",
+        "tr": "Diş fırçası"
+      },
+      "sort": 10,
+      "essential": true,
+      "qty": {
+        "base": 1,
+        "perTraveler": true
+      }
+    },
+    {
+      "key": "toothpaste",
+      "category": "toiletries",
+      "labels": {
+        "en": "Toothpaste",
+        "tr": "Diş macunu"
+      },
+      "sort": 20
+    },
+    {
+      "key": "deodorant",
+      "category": "toiletries",
+      "labels": {
+        "en": "Deodorant",
+        "tr": "Deodorant"
+      },
+      "sort": 30,
+      "qty": {
+        "base": 1,
+        "perTraveler": true
+      }
+    },
+    {
+      "key": "shampoo",
+      "category": "toiletries",
+      "labels": {
+        "en": "Shampoo & shower gel",
+        "tr": "Şampuan ve duş jeli"
+      },
+      "sort": 40
+    },
+    {
+      "key": "razor",
+      "category": "toiletries",
+      "labels": {
+        "en": "Razor / shaving kit",
+        "tr": "Tıraş malzemesi"
+      },
+      "sort": 50
+    },
+    {
+      "key": "hairbrush",
+      "category": "toiletries",
+      "labels": {
+        "en": "Hairbrush or comb",
+        "tr": "Saç fırçası veya tarak"
+      },
+      "sort": 60
+    },
+    {
+      "key": "toiletry_bag",
+      "category": "toiletries",
+      "labels": {
+        "en": "Toiletry bag",
+        "tr": "Banyo çantası"
+      },
+      "sort": 70
+    },
+    {
+      "key": "medication",
+      "category": "health",
+      "labels": {
+        "en": "Prescription medication",
+        "tr": "Reçeteli ilaçlar"
+      },
+      "sort": 10,
+      "essential": true
+    },
+    {
+      "key": "painkillers",
+      "category": "health",
+      "labels": {
+        "en": "Painkillers",
+        "tr": "Ağrı kesici"
+      },
+      "sort": 20
+    },
+    {
+      "key": "plasters",
+      "category": "health",
+      "labels": {
+        "en": "Plasters & antiseptic",
+        "tr": "Yara bandı ve antiseptik"
+      },
+      "sort": 30
+    },
+    {
+      "key": "phone_charger",
+      "category": "electronics",
+      "labels": {
+        "en": "Phone charger",
+        "tr": "Telefon şarj cihazı"
+      },
+      "sort": 10,
+      "essential": true,
+      "qty": {
+        "base": 1,
+        "perTraveler": true
+      }
+    },
+    {
+      "key": "power_bank",
+      "category": "electronics",
+      "labels": {
+        "en": "Power bank",
+        "tr": "Taşınabilir şarj cihazı"
+      },
+      "sort": 20
+    },
+    {
+      "key": "headphones",
+      "category": "electronics",
+      "labels": {
+        "en": "Headphones",
+        "tr": "Kulaklık"
+      },
+      "sort": 30,
+      "qty": {
+        "base": 1,
+        "perTraveler": true
+      }
+    },
+    {
+      "key": "travel_adapter",
+      "category": "electronics",
+      "labels": {
+        "en": "Travel adapter",
+        "tr": "Seyahat adaptörü"
+      },
+      "sort": 40
+    },
+    {
+      "key": "day_bag",
+      "category": "gear",
+      "labels": {
+        "en": "Day bag",
+        "tr": "Günlük çanta"
+      },
+      "sort": 10
+    },
+    {
+      "key": "water_bottle",
+      "category": "misc",
+      "labels": {
+        "en": "Reusable water bottle",
+        "tr": "Suluk"
+      },
+      "sort": 10,
+      "qty": {
+        "base": 1,
+        "perTraveler": true
+      }
+    },
+    {
+      "key": "snacks",
+      "category": "misc",
+      "labels": {
+        "en": "Snacks for the journey",
+        "tr": "Yol atıştırmalığı"
+      },
+      "sort": 20
+    }
+  ],
+  "tripTypes": {
+    "beach": {
+      "items": [
+        {
+          "key": "swimsuit",
+          "category": "clothing",
+          "labels": {
+            "en": "Swimsuit",
+            "tr": "Mayo / bikini"
+          },
+          "sort": 5,
+          "qty": {
+            "base": 1,
+            "perDay": 0.15,
+            "min": 1,
+            "max": 3,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "beach_coverup",
+          "category": "clothing",
+          "labels": {
+            "en": "Beach cover-up",
+            "tr": "Plaj pareosu"
+          },
+          "sort": 85,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "flip_flops",
+          "category": "clothing",
+          "labels": {
+            "en": "Flip-flops",
+            "tr": "Parmak arası terlik"
+          },
+          "sort": 75,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "sun_hat",
+          "category": "clothing",
+          "labels": {
+            "en": "Sun hat",
+            "tr": "Şapka"
+          },
+          "sort": 80,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "sunscreen",
+          "category": "toiletries",
+          "labels": {
+            "en": "Sunscreen",
+            "tr": "Güneş kremi"
+          },
+          "sort": 5,
+          "essential": true
+        },
+        {
+          "key": "after_sun",
+          "category": "toiletries",
+          "labels": {
+            "en": "After-sun lotion",
+            "tr": "Güneş sonrası bakım"
+          },
+          "sort": 45
+        },
+        {
+          "key": "beach_towel",
+          "category": "gear",
+          "labels": {
+            "en": "Beach towel",
+            "tr": "Plaj havlusu"
+          },
+          "sort": 20,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "beach_bag",
+          "category": "gear",
+          "labels": {
+            "en": "Beach bag",
+            "tr": "Plaj çantası"
+          },
+          "sort": 30
+        },
+        {
+          "key": "sunglasses",
+          "category": "gear",
+          "labels": {
+            "en": "Sunglasses",
+            "tr": "Güneş gözlüğü"
+          },
+          "sort": 40,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        }
+      ]
+    },
+    "city": {
+      "items": [
+        {
+          "key": "everyday_shoes",
+          "category": "clothing",
+          "labels": {
+            "en": "Comfortable walking shoes",
+            "tr": "Rahat yürüyüş ayakkabısı"
+          },
+          "sort": 70,
+          "essential": true,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "smart_casual",
+          "category": "clothing",
+          "labels": {
+            "en": "Smart-casual outfit",
+            "tr": "Şık günlük kombin"
+          },
+          "sort": 45,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "day_bag",
+          "category": "gear",
+          "labels": {
+            "en": "Day bag or small backpack",
+            "tr": "Günlük çanta veya küçük sırt çantası"
+          },
+          "sort": 10
+        },
+        {
+          "key": "umbrella",
+          "category": "gear",
+          "labels": {
+            "en": "Compact umbrella",
+            "tr": "Katlanır şemsiye"
+          },
+          "sort": 50
+        },
+        {
+          "key": "offline_maps",
+          "category": "misc",
+          "labels": {
+            "en": "Offline maps downloaded",
+            "tr": "Çevrimdışı haritaları indir"
+          },
+          "sort": 30
+        },
+        {
+          "key": "transit_card",
+          "category": "misc",
+          "labels": {
+            "en": "Transit card or pass",
+            "tr": "Ulaşım kartı"
+          },
+          "sort": 40
+        }
+      ]
+    },
+    "business": {
+      "items": [
+        {
+          "key": "dress_shirt",
+          "category": "clothing",
+          "labels": {
+            "en": "Dress shirts",
+            "tr": "Gömlek"
+          },
+          "sort": 35,
+          "qty": {
+            "base": 0,
+            "perDay": 1,
+            "min": 1,
+            "max": 6,
+            "perTraveler": true,
+            "laundryCapDays": 3
+          }
+        },
+        {
+          "key": "suit",
+          "category": "clothing",
+          "labels": {
+            "en": "Suit or blazer",
+            "tr": "Takım elbise veya ceket"
+          },
+          "sort": 36,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "dress_shoes",
+          "category": "clothing",
+          "labels": {
+            "en": "Dress shoes",
+            "tr": "Klasik ayakkabı"
+          },
+          "sort": 72,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "belt",
+          "category": "clothing",
+          "labels": {
+            "en": "Belt",
+            "tr": "Kemer"
+          },
+          "sort": 73,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "laptop",
+          "category": "electronics",
+          "labels": {
+            "en": "Laptop",
+            "tr": "Dizüstü bilgisayar"
+          },
+          "sort": 5,
+          "essential": true,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "laptop_charger",
+          "category": "electronics",
+          "labels": {
+            "en": "Laptop charger",
+            "tr": "Laptop şarj cihazı"
+          },
+          "sort": 6,
+          "essential": true,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "presentation_adapter",
+          "category": "electronics",
+          "labels": {
+            "en": "Presentation adapter (HDMI / USB-C)",
+            "tr": "Sunum adaptörü (HDMI / USB-C)"
+          },
+          "sort": 35
+        },
+        {
+          "key": "notebook_pen",
+          "category": "gear",
+          "labels": {
+            "en": "Notebook & pen",
+            "tr": "Defter ve kalem"
+          },
+          "sort": 20
+        },
+        {
+          "key": "business_cards",
+          "category": "gear",
+          "labels": {
+            "en": "Business cards",
+            "tr": "Kartvizit"
+          },
+          "sort": 25
+        },
+        {
+          "key": "work_documents",
+          "category": "documents",
+          "labels": {
+            "en": "Work documents",
+            "tr": "İş belgeleri"
+          },
+          "sort": 35
+        }
+      ]
+    },
+    "camping": {
+      "items": [
+        {
+          "key": "tent",
+          "category": "gear",
+          "labels": {
+            "en": "Tent & pegs",
+            "tr": "Çadır ve kazıklar"
+          },
+          "sort": 5,
+          "essential": true
+        },
+        {
+          "key": "sleeping_bag",
+          "category": "gear",
+          "labels": {
+            "en": "Sleeping bag",
+            "tr": "Uyku tulumu"
+          },
+          "sort": 6,
+          "essential": true,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "sleeping_mat",
+          "category": "gear",
+          "labels": {
+            "en": "Sleeping mat",
+            "tr": "Kamp matı"
+          },
+          "sort": 7,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "headlamp",
+          "category": "gear",
+          "labels": {
+            "en": "Headlamp & spare batteries",
+            "tr": "Kafa lambası ve yedek pil"
+          },
+          "sort": 8,
+          "essential": true,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "camping_stove",
+          "category": "gear",
+          "labels": {
+            "en": "Camping stove & fuel",
+            "tr": "Kamp ocağı ve yakıt"
+          },
+          "sort": 12
+        },
+        {
+          "key": "cookware",
+          "category": "gear",
+          "labels": {
+            "en": "Cookware & utensils",
+            "tr": "Pişirme kabı ve çatal bıçak"
+          },
+          "sort": 14
+        },
+        {
+          "key": "multi_tool",
+          "category": "gear",
+          "labels": {
+            "en": "Multi-tool or knife",
+            "tr": "Çakı veya çok amaçlı alet"
+          },
+          "sort": 16
+        },
+        {
+          "key": "water_filter",
+          "category": "gear",
+          "labels": {
+            "en": "Water filter or purification tablets",
+            "tr": "Su filtresi veya arıtma tableti"
+          },
+          "sort": 18
+        },
+        {
+          "key": "matches",
+          "category": "gear",
+          "labels": {
+            "en": "Waterproof matches or lighter",
+            "tr": "Su geçirmez kibrit veya çakmak"
+          },
+          "sort": 22
+        },
+        {
+          "key": "rope_cord",
+          "category": "gear",
+          "labels": {
+            "en": "Paracord",
+            "tr": "Paraşüt ipi"
+          },
+          "sort": 24
+        },
+        {
+          "key": "trash_bags",
+          "category": "gear",
+          "labels": {
+            "en": "Trash bags",
+            "tr": "Çöp poşeti"
+          },
+          "sort": 26
+        },
+        {
+          "key": "first_aid_kit",
+          "category": "health",
+          "labels": {
+            "en": "First-aid kit",
+            "tr": "İlk yardım çantası"
+          },
+          "sort": 5,
+          "essential": true
+        },
+        {
+          "key": "insect_repellent",
+          "category": "health",
+          "labels": {
+            "en": "Insect repellent",
+            "tr": "Böcek kovucu"
+          },
+          "sort": 25
+        },
+        {
+          "key": "hiking_boots",
+          "category": "clothing",
+          "labels": {
+            "en": "Hiking boots",
+            "tr": "Trekking botu"
+          },
+          "sort": 70,
+          "essential": true,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "rain_jacket",
+          "category": "clothing",
+          "labels": {
+            "en": "Rain jacket",
+            "tr": "Yağmurluk"
+          },
+          "sort": 60,
+          "essential": true,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "thermal_layer",
+          "category": "clothing",
+          "labels": {
+            "en": "Thermal layer",
+            "tr": "Termal içlik"
+          },
+          "sort": 55,
+          "qty": {
+            "base": 1,
+            "perDay": 0.2,
+            "min": 1,
+            "max": 3,
+            "perTraveler": true,
+            "laundryCapDays": 3
+          }
+        },
+        {
+          "key": "water_bottle",
+          "category": "misc",
+          "labels": {
+            "en": "Water bottle (1L or more)",
+            "tr": "Matara (1L veya üzeri)"
+          },
+          "sort": 10,
+          "essential": true,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        }
+      ]
+    },
+    "winter": {
+      "items": [
+        {
+          "key": "winter_coat",
+          "category": "clothing",
+          "labels": {
+            "en": "Winter coat",
+            "tr": "Kışlık mont"
+          },
+          "sort": 58,
+          "essential": true,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "thermal_layer",
+          "category": "clothing",
+          "labels": {
+            "en": "Thermal base layers",
+            "tr": "Termal içlik"
+          },
+          "sort": 55,
+          "qty": {
+            "base": 0,
+            "perDay": 0.5,
+            "min": 1,
+            "max": 5,
+            "perTraveler": true,
+            "laundryCapDays": 3
+          }
+        },
+        {
+          "key": "gloves",
+          "category": "clothing",
+          "labels": {
+            "en": "Gloves",
+            "tr": "Eldiven"
+          },
+          "sort": 82,
+          "essential": true,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "beanie",
+          "category": "clothing",
+          "labels": {
+            "en": "Beanie",
+            "tr": "Bere"
+          },
+          "sort": 83,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "scarf",
+          "category": "clothing",
+          "labels": {
+            "en": "Scarf",
+            "tr": "Atkı"
+          },
+          "sort": 84,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "wool_socks",
+          "category": "clothing",
+          "labels": {
+            "en": "Wool socks",
+            "tr": "Yün çorap"
+          },
+          "sort": 25,
+          "qty": {
+            "base": 0,
+            "perDay": 1,
+            "min": 2,
+            "max": 8,
+            "perTraveler": true,
+            "laundryCapDays": 4
+          }
+        },
+        {
+          "key": "snow_boots",
+          "category": "clothing",
+          "labels": {
+            "en": "Snow boots",
+            "tr": "Kar botu"
+          },
+          "sort": 71,
+          "essential": true,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "sweater",
+          "category": "clothing",
+          "labels": {
+            "en": "Sweaters",
+            "tr": "Kazak"
+          },
+          "sort": 48,
+          "qty": {
+            "base": 1,
+            "perDay": 0.2,
+            "min": 1,
+            "max": 4,
+            "perTraveler": true,
+            "laundryCapDays": 3
+          }
+        },
+        {
+          "key": "lip_balm",
+          "category": "toiletries",
+          "labels": {
+            "en": "Lip balm",
+            "tr": "Dudak kremi"
+          },
+          "sort": 55
+        },
+        {
+          "key": "moisturizer",
+          "category": "toiletries",
+          "labels": {
+            "en": "Moisturiser",
+            "tr": "Nemlendirici"
+          },
+          "sort": 56
+        },
+        {
+          "key": "hand_warmers",
+          "category": "gear",
+          "labels": {
+            "en": "Hand warmers",
+            "tr": "El ısıtıcı"
+          },
+          "sort": 55
+        },
+        {
+          "key": "sunglasses",
+          "category": "gear",
+          "labels": {
+            "en": "Sunglasses (snow glare)",
+            "tr": "Güneş gözlüğü (kar parlaması)"
+          },
+          "sort": 40,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        }
+      ]
+    },
+    "general": {
+      "items": []
+    }
+  },
+  "options": {
+    "swimming": {
+      "items": [
+        {
+          "key": "swimsuit",
+          "category": "clothing",
+          "labels": {
+            "en": "Swimsuit",
+            "tr": "Mayo / bikini"
+          },
+          "sort": 5,
+          "qty": {
+            "base": 1,
+            "perDay": 0.15,
+            "min": 1,
+            "max": 3,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "quick_dry_towel",
+          "category": "gear",
+          "labels": {
+            "en": "Quick-dry towel",
+            "tr": "Hızlı kuruyan havlu"
+          },
+          "sort": 21,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "goggles",
+          "category": "gear",
+          "labels": {
+            "en": "Swim goggles",
+            "tr": "Yüzücü gözlüğü"
+          },
+          "sort": 45,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        }
+      ]
+    },
+    "formalEvent": {
+      "items": [
+        {
+          "key": "formal_outfit",
+          "category": "clothing",
+          "labels": {
+            "en": "Formal outfit",
+            "tr": "Özel gün kıyafeti"
+          },
+          "sort": 46,
+          "essential": true,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "dress_shoes",
+          "category": "clothing",
+          "labels": {
+            "en": "Dress shoes",
+            "tr": "Klasik ayakkabı"
+          },
+          "sort": 72,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "accessories",
+          "category": "clothing",
+          "labels": {
+            "en": "Jewellery & accessories",
+            "tr": "Takı ve aksesuar"
+          },
+          "sort": 90
+        },
+        {
+          "key": "garment_bag",
+          "category": "gear",
+          "labels": {
+            "en": "Garment bag",
+            "tr": "Kıyafet kılıfı"
+          },
+          "sort": 60
+        }
+      ]
+    },
+    "work": {
+      "items": [
+        {
+          "key": "laptop",
+          "category": "electronics",
+          "labels": {
+            "en": "Laptop",
+            "tr": "Dizüstü bilgisayar"
+          },
+          "sort": 5,
+          "essential": true,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "laptop_charger",
+          "category": "electronics",
+          "labels": {
+            "en": "Laptop charger",
+            "tr": "Laptop şarj cihazı"
+          },
+          "sort": 6,
+          "essential": true,
+          "qty": {
+            "base": 1,
+            "perTraveler": true
+          }
+        },
+        {
+          "key": "travel_adapter",
+          "category": "electronics",
+          "labels": {
+            "en": "Travel adapter",
+            "tr": "Seyahat adaptörü"
+          },
+          "sort": 40
+        },
+        {
+          "key": "notebook_pen",
+          "category": "gear",
+          "labels": {
+            "en": "Notebook & pen",
+            "tr": "Defter ve kalem"
+          },
+          "sort": 20
+        }
+      ]
+    },
+    "laundry": {
+      "items": [
+        {
+          "key": "laundry_bag",
+          "category": "gear",
+          "labels": {
+            "en": "Laundry bag",
+            "tr": "Kirli çamaşır torbası"
+          },
+          "sort": 70
+        },
+        {
+          "key": "travel_detergent",
+          "category": "toiletries",
+          "labels": {
+            "en": "Travel detergent",
+            "tr": "Seyahat deterjanı"
+          },
+          "sort": 80
+        }
+      ]
+    }
+  }
+}
