@@ -226,11 +226,20 @@ live there, because the app has none.
 
 | Value | Current | Needed for |
 |---|---|---|
-| `privacyPolicyUrl` | `https://valizim.app/privacy` | App Store Connect requires a reachable URL |
-| `termsUrl` | `https://valizim.app/terms` | Linked from the paywall |
-| `supportEmail` | `support@valizim.app` | Settings → Contact support |
+| `supportEmail` | `support@valizim.app` — **unregistered domain, replace this** | Settings → Contact support; App Review needs a reachable contact |
 | `AppTheme.seed` | `#0D9488` | Brand accent; the whole scheme derives from it |
 | App icon | Generated placeholder | See below |
+
+The privacy policy and terms are live, hosted free from this repository's
+`docs/` folder on GitHub Pages:
+
+- <https://barisbeneer.github.io/valizim/privacy/>
+- <https://barisbeneer.github.io/valizim/terms/>
+
+Both are plain HTML with no build step. Edit `docs/privacy/index.html` or
+`docs/terms/index.html` and push; the site redeploys automatically. To move to a
+custom domain later, change the two constants in `AppConfig` — no screen
+references a URL directly.
 
 The icon and launch glyph are generated placeholders, not final artwork:
 

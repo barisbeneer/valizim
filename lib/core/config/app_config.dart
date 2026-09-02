@@ -20,12 +20,22 @@ abstract final class AppConfig {
   // ---------------------------------------------------------------------------
   // Legal links
   //
-  // PLACEHOLDER: replace both with live URLs before App Store submission.
-  // Apple requires a reachable privacy policy URL in App Store Connect.
+  // Served from GitHub Pages out of the repository's docs/ folder, so they cost
+  // nothing to host and are versioned alongside the code they describe. Both
+  // must stay reachable: App Store Connect requires a live privacy policy URL,
+  // and the paywall links to the terms.
+  //
+  // If a custom domain is adopted later, change these two constants and nothing
+  // else - every screen reads them from here.
   // ---------------------------------------------------------------------------
 
-  static const String privacyPolicyUrl = 'https://valizim.app/privacy';
-  static const String termsUrl = 'https://valizim.app/terms';
+  static const String privacyPolicyUrl =
+      'https://barisbeneer.github.io/valizim/privacy/';
+  static const String termsUrl = 'https://barisbeneer.github.io/valizim/terms/';
+
+  /// PLACEHOLDER: still points at an unregistered domain, so "Contact support"
+  /// currently composes mail to nowhere. Replace with an address that actually
+  /// receives mail before submission - App Review needs a reachable contact.
   static const String supportEmail = 'support@valizim.app';
 
   // ---------------------------------------------------------------------------
