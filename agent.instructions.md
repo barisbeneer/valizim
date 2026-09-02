@@ -39,6 +39,7 @@ valizim/
 ├── docs/
 │   ├── ios_release_checklist.md                Signing, IAP, privacy, upload
 │   ├── ui_ux_validation_report.md              Validation gate findings
+│   ├── screenshots/                            README imagery
 │   └── untranslated_messages.json              Generated; must stay empty ({})
 │
 ├── tool/

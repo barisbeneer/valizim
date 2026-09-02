@@ -7,6 +7,15 @@ in a few milliseconds, with no network, no account and no API key.
 Built to a written product specification (kept private; the requirements it
 sets are reflected throughout this README and in `docs/`).
 
+<p align="center">
+  <img src="docs/screenshots/packing-list.png" width="320"
+       alt="The Valizim checklist for a three-day business trip to Berlin. A progress ring reads 15 percent, six of thirty-nine packed, thirty-three items left. Below it the list is grouped into sections: Documents, five of five packed, with Passport / ID, Wallet and cards, Tickets and bookings all ticked and marked Essential; then Clothing, one of twelve, showing Underwear with a times-three quantity badge.">
+</p>
+
+<p align="center">
+  <em>A three-day business trip. 39 items, generated locally in milliseconds.</em>
+</p>
+
 ---
 
 ## Status
